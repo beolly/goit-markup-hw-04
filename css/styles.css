@@ -96,7 +96,7 @@ section {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
   display: flex;
   flex-direction: column;
 
@@ -105,6 +105,10 @@ section {
 .menu-link,
 .address-link {
   padding: 24px 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.adress-li {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* .menu-li:active {
@@ -124,9 +128,8 @@ section {
   height: 4px;
   border-radius: 2px;
   background-color: #404bbf;
-
-  /* Згідно з макетом, у посилання на активну сторінку має бути інший колір тексту та псевдоелемент-підкреслення. Щоб реалізувати це підкреслення необхідно використати псевдоелемент  */
 }
+
 .menu-link:focus,
 .menu-link:active,
 .menu-link:hover {
@@ -147,9 +150,7 @@ section {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-.address-link {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 .adress-link:hover,
 .adress-link:active,
 .adress-link:focus {
