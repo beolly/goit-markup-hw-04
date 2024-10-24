@@ -103,7 +103,7 @@ section {
   align-items: center;
 }
 .menu-link,
-.address-link {
+.address-li {
   padding: 24px 0;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -168,6 +168,9 @@ section {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  
+}
+.hero{
   max-width: 1440рх;
 }
 .hero-title {
@@ -223,19 +226,23 @@ section {
 }
 .icon {
   fill: none;
-  display: flex;
   align-items: center;
   justify-content: center;
   margin: 24px 100px;
 }
 .icon-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  margin-bottom: 8px;
   border-radius: 4px;
   border: 1px solid var(--LIGHT-SLATE, #8e8f99);
   background: var(--CLOUD, #f4f4fd);
 }
 .benefits-title {
   color: #2e2f42;
-
+margin-bottom: 8px;
   font-size: 20px;
   margin: 8px 0;
   font-weight: 500;
@@ -306,8 +313,8 @@ section {
     0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
-.team-memb {
-  padding: 32px 16px;
+.team-memb { padding: 32px 0 ;
+
 }
 .team-desc {
   text-align: center;
@@ -323,22 +330,26 @@ section {
   justify-content: center;
 }
 .icon-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
-  background-color: #4d5ae5;
-
+  
   fill: #f4f4fd;
   transition-property: background-color;
 }
-.icon-list:hover,
-.icon-list:focus {
+.social-link:hover,
+.social-link:focus {
   background-color: #404bbf;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-link{
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
 }
 .social-link,
 .footer-social-link {
@@ -359,22 +370,20 @@ section {
   left: 0;
   overflow: auto;
   background-color: var(--IRIS, #4d5ae5);
-  position: absolute;
+  position:absolute;
   width: 100%;
   height: 100%;
   transform: translateY(100%);
-  padding: 40px 32px 0 32px;
-
+  padding: 40px 32px;
   color: #f4f4fd;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.overlay-text {
   font-family: Roboto;
   font-size: 16px;
-  line-height: 1, 5;
-  letter-spacing: 0.02em;
 }
-.project-link:hover .overlay {
+
+.project-link:hover .overlay{
   transform: translateY(0%);
 }
 .project-title {
@@ -408,10 +417,12 @@ section {
 .project-link {
   align-items: center;
   overflow: hidden;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .project-link:hover {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    
   /* ptransform */
 }
 .project-list:first-child {
@@ -432,11 +443,14 @@ section {
 .footer {
   background: #2e2f42;
 }
-.footer-list {
+.footer-cl{
   display: flex;
-  gap: 120px;
-
-  padding: 100px 0;
+  align-items: baseline;
+padding-top: 100px;
+padding-bottom: 100px;
+}
+.footer-text-block{
+  margin-right: 120px;
 }
 .footer-logo {
   color: #4d5ae5;
@@ -467,33 +481,41 @@ section {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-.footer-media-text {
-  color: var(--WHITE, #fff);
 
+.footer-media-text {
+  color: #FFFFFF;
+font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-bottom: 16px;
 }
 
 .footer-icon-li {
   display: flex;
-
-  gap: 16px;
-  margin-top: 16px;
-  justify-content: center;
+gap: 16px;
+  /* margin-top: 16px;
+  justify-content: center; */
 }
 .footer-icon-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+ 
   width: 40px;
   height: 40px;
-  border-radius: 50%;
-  background-color: #4d5ae5;
   fill: #f4f4fd;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-icon-list:hover,
-.footer-icon-list:focus {
+.footer-social-link{
+  width: 100%;
+  height: 100%;
+display: flex;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-social-link:hover,
+.footer-social-link:focus {
   background-color: #31d0aa;
 }
+
